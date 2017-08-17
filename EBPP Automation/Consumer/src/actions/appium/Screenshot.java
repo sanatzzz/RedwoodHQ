@@ -1,5 +1,4 @@
-package actions;
-
+package actions.appium;
 import java.io.File;
 import java.io.IOException;
 import java.util.Date;
@@ -8,7 +7,7 @@ import java.util.HashMap;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 
-import utils.Constants;
+import actions.utils.Constants;
 
 /**
  * Created by dinkark on 14-Oct-2016

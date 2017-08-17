@@ -1,11 +1,11 @@
 package actions.appium;
 import java.util.HashMap;
 import io.appium.java_client.MobileElement;
-import utils.Elements;
+import actions.utils.Elements;
 import java.util.*;
 import actions.selenium.utils.GetObjectRepository;
 import org.junit.Assert;
-import utils.Constants;
+import actions.utils.Constants;
 
 /**
  * Created by dinkark on 13-Oct-2016

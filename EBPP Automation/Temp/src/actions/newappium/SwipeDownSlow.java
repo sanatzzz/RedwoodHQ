@@ -1,5 +1,5 @@
 package actions.newappium;
-import actions.selenium.utils.GetObjectRepository;
+import actions.utils.GetObjectRepository;
 import java.util.HashMap;
 import actions.utils.Constants;
 import io.appium.java_client.MobileElement;

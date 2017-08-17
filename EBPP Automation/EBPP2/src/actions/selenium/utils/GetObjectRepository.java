@@ -1,6 +1,6 @@
 package actions.selenium.utils;
 import actions.selenium.Browser;
-import actions.appium.Driver;
+import actions.newappium.Driver;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.Statement;
@@ -77,7 +77,7 @@ public class GetObjectRepository{
         
     }
     
-    public static MobileElement find_Element(String sElement, String sPage_name) throws Exception{
+    public static WebElement find_Element(String sElement, String sPage_name) throws Exception{
         
         String sLocatorType = null;
         String sLocatorValue = null;
@@ -97,7 +97,7 @@ public class GetObjectRepository{
  }
          System.out.println("Objects properties: ->" +  sLocatorType  + ":" + sLocatorValue );
         
-         MobileElement sLocator = null;
+        WebElement sLocator = null;
         
         
         System.out.println("sLocatorValue"+sLocatorValue);
@@ -107,30 +107,30 @@ public class GetObjectRepository{
          switch (sLocatorType)
          {
               case "xpath":
-                 sLocator = Driver.driver.findElement(By.xpath(sLocatorValue));      
+                 sLocator = Browser.Driver.findElement(By.xpath(sLocatorValue));      
                      break;
                  case "linkText":
-                  sLocator = Driver.driver.findElement(By.linkText(sLocatorValue));
+                  sLocator = Browser.Driver.findElement(By.linkText(sLocatorValue));
                      break;
                  case "className":
-                  sLocator = Driver.driver.findElement(By.className(sLocatorValue));
+                  sLocator =Browser.Driver.findElement(By.className(sLocatorValue));
                      break;
                  case "id":
-                  sLocator = Driver.driver.findElement(By.id(sLocatorValue));
+                  sLocator = Browser.Driver.findElement(By.id(sLocatorValue));
                      break;
                  case "cssSelector":
-                  sLocator = Driver.driver.findElement(By.cssSelector(sLocatorValue));
+                  sLocator = Browser.Driver.findElement(By.cssSelector(sLocatorValue));
                      break;
                  case "name":
                   System.out.println("inside name");
-                  sLocator =Driver.driver.findElement(By.name(sLocatorValue));
+                  sLocator =Browser.Driver.findElement(By.name(sLocatorValue));
                  System.out.println(""+sLocator);
                      break;
                  case "partialLinkText":
-                  sLocator = Driver.driver.findElement(By.partialLinkText(sLocatorValue));
+                  sLocator = Browser.Driver.findElement(By.partialLinkText(sLocatorValue));
                      break;
                  case "tagName":
-                  sLocator =Driver.driver.findElement(By.tagName(sLocatorValue));
+                  sLocator =Browser.Driver.findElement(By.tagName(sLocatorValue));
                      break;
          }
         return sLocator;
@@ -138,7 +138,7 @@ public class GetObjectRepository{
     }
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////    
     
-     public static MobileElement find_All(String sElement, String sPage_name) throws Exception{
+     public static WebElement find_All(String sElement, String sPage_name) throws Exception{
         
         String sLocatorType = null;
         String sLocatorValue = null;
@@ -158,7 +158,7 @@ public class GetObjectRepository{
  }
          System.out.println("Objects properties: ->" +  sLocatorType  + ":" + sLocatorValue );
         
-         MobileElement sLocator = null;
+        WebElement sLocator = null;
         
         
         System.out.println("sLocatorValue"+sLocatorValue);
@@ -168,28 +168,28 @@ public class GetObjectRepository{
          switch (sLocatorType)
          {
               case "xpath":
-                 sLocator = Driver.driver.findElement(By.xpath(sLocatorValue));      
+                 sLocator = Browser.Driver.findElement(By.xpath(sLocatorValue));      
                      break;
                  case "linkText":
-                  sLocator = Driver.driver.findElement(By.linkText(sLocatorValue));
+                  sLocator = Browser.Driver.findElement(By.linkText(sLocatorValue));
                      break;
                  case "className":
-                  sLocator = Driver.driver.findElement(By.className(sLocatorValue));
+                  sLocator = Browser.Driver.findElement(By.className(sLocatorValue));
                      break;
                  case "id":
-                  sLocator = Driver.driver.findElement(By.id(sLocatorValue));
+                  sLocator = Browser.Driver.findElement(By.id(sLocatorValue));
                      break;
                  case "cssSelector":
-                  sLocator = Driver.driver.findElement(By.cssSelector(sLocatorValue));
+                  sLocator = Browser.Driver.findElement(By.cssSelector(sLocatorValue));
                      break;
                  case "name":
-                  sLocator = Driver.driver.findElement(By.name(sLocatorValue));
+                  sLocator = Browser.Driver.findElement(By.name(sLocatorValue));
                      break;
                  case "partialLinkText":
-                  sLocator = Driver.driver.findElement(By.partialLinkText(sLocatorValue));
+                  sLocator = Browser.Driver.findElement(By.partialLinkText(sLocatorValue));
                      break;
                  case "tagName":
-                  sLocator = Driver.driver.findElement(By.tagName(sLocatorValue));
+                  sLocator = Browser.Driver.findElement(By.tagName(sLocatorValue));
                      break;
          }
         return sLocator;

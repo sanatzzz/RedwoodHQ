@@ -1,4 +1,4 @@
-package utils;
+package actions.utils;
 
 /**
  * Created by dinkark on 30-Sep-2016
@@ -6,7 +6,7 @@ package utils;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
-
+import actions.utils.Constants;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 

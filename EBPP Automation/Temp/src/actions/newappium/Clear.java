@@ -2,8 +2,7 @@ package actions.newappium;
 import java.util.HashMap;
 import io.appium.java_client.MobileElement;
 import actions.utils.Elements;
-import java.util.*;
-import actions.selenium.utils.GetObjectRepository;
+import actions.utils.GetObjectRepository;
 
 class Clear{
     public void run(HashMap<String, String> params) throws Exception{

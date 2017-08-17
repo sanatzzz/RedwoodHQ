@@ -3,7 +3,7 @@ import java.util.HashMap;
 import io.appium.java_client.MobileElement;
 import actions.utils.Elements;
 import java.util.*;
-import actions.selenium.utils.GetObjectRepository;
+import actions.utils.GetObjectRepository;
 import org.junit.Assert;
 import actions.utils.Constants;
 

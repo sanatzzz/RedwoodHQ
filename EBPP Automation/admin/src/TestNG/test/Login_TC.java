@@ -1,4 +1,4 @@
-package test;
+package TestNG.test;
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import java.net.MalformedURLException;
@@ -16,12 +16,12 @@ import org.testng.Assert;
 import utils.Constants;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-import pageObjects.Login;
+import TestNG.pageObjects.Login;
 import TestNG.test.Capabilities;
 
 public class Login_TC  {
 
-    WebDriver driver;
+    //AppiumDriver<MobileElement> driver;
     Login objLogin;
 
     //HomePage objHomePage;
@@ -54,7 +54,7 @@ public class Login_TC  {
 
         //Create Login Page object
 
-    objLogin = new Login(driver);
+    objLogin = new Login(Capabilities.driver);
 
     //Verify login page title
 

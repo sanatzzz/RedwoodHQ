@@ -15,6 +15,7 @@ import io.appium.java_client.remote.MobileCapabilityType;
 import utils.Constants;
 import io.appium.java_client.MobileBy.ByAndroidUIAutomator;
 import utils.Elements;
+import org.openqa.selenium.By;
 import org.openqa.selenium.Alert;
 import java.util.*;
 
@@ -34,13 +35,16 @@ public  class Capabilities  {
 		capabilities.setCapability(MobileCapabilityType.NO_RESET, true);
 		capabilities.setCapability(Constants.APP_PACKAGE, "com.corpay.mwallet.sit.dev");
 		capabilities.setCapability(Constants.APP_ACTIVITY, "com.corpay.mwallet.app.ui.flows.login.AppLoginActivity");
-		capabilities.setCapability(MobileCapabilityType.UDID, "4d00c2594c45512f");
+		capabilities.setCapability(MobileCapabilityType.UDID, "FA49RY903450");
 		url = "http://127.0.0.1:4723/wd/hub";
 		if (!url.startsWith(Constants.HTTP) && !url.startsWith(Constants.HTTPS)) {
 			url = Constants.HTTP + url;
 		}
 		URL remoteAddress = new URL(url);
 	    driver = new AndroidDriver<MobileElement>(remoteAddress, capabilities);
+        driver.manage().timeouts().implicitlyWait(7, TimeUnit.SECONDS);
+        MobileElement element = driver.findElement(By.id("etMobileNumber"));  
+        element.sendKeys("8335852828");
         
     }
 }

@@ -8,7 +8,7 @@ import java.util.HashMap;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.MultiTouchAction;
 import io.appium.java_client.TouchAction;
-import utils.Elements;
+import actions.utils.Elements;
 import actions.selenium.utils.GetObjectRepository;
 
 class Zoom {

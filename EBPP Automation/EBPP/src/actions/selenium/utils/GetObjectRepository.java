@@ -1,6 +1,6 @@
 package actions.selenium.utils;
 import actions.selenium.Browser;
-import actions.appium.Driver;
+import actions.newappium.Driver;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.Statement;
@@ -97,7 +97,7 @@ public class GetObjectRepository{
  }
          System.out.println("Objects properties: ->" +  sLocatorType  + ":" + sLocatorValue );
         
-         WebElement sLocator = null;
+        WebElement sLocator = null;
         
         
         System.out.println("sLocatorValue"+sLocatorValue);
@@ -107,15 +107,13 @@ public class GetObjectRepository{
          switch (sLocatorType)
          {
               case "xpath":
-                 System.out.println("Inside xpath 1");
-                 sLocator = Browser.Driver.findElement(By.xpath(sLocatorValue));  
-                 System.out.println("Inside xpath 2");
+                 sLocator = Browser.Driver.findElement(By.xpath(sLocatorValue));      
                      break;
                  case "linkText":
                   sLocator = Browser.Driver.findElement(By.linkText(sLocatorValue));
                      break;
                  case "className":
-                  sLocator = Browser.Driver.findElement(By.className(sLocatorValue));
+                  sLocator =Browser.Driver.findElement(By.className(sLocatorValue));
                      break;
                  case "id":
                   sLocator = Browser.Driver.findElement(By.id(sLocatorValue));
@@ -160,7 +158,7 @@ public class GetObjectRepository{
  }
          System.out.println("Objects properties: ->" +  sLocatorType  + ":" + sLocatorValue );
         
-         WebElement sLocator = null;
+        WebElement sLocator = null;
         
         
         System.out.println("sLocatorValue"+sLocatorValue);

@@ -1,4 +1,4 @@
-package actions;
+package actions.appium;
 
 import java.util.HashMap;
 

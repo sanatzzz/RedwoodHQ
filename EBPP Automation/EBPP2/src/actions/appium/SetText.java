@@ -6,7 +6,7 @@ package actions.appium;
 import java.util.HashMap;
 import actions.selenium.utils.GetObjectRepository;
 import io.appium.java_client.MobileElement;
-import utils.Elements;
+import actions.utils.Elements;
 
 class SetText {
 

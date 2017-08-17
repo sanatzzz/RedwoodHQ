@@ -1,8 +1,8 @@
 package actions.newappium;
 import java.util.HashMap;
 import io.appium.java_client.MobileElement;
-import actions.selenium.utils.GetObjectRepository;
-import utils.Elements;
+import actions.utils.GetObjectRepository;
+import actions.utils.Elements;
 
 class ClickElement {
 	public void run(HashMap<String, String> params) throws Exception {

@@ -4,9 +4,9 @@ package actions.newappium;
  * Created by dinkark on 05-Oct-2016
  */
 import java.util.HashMap;
-import actions.selenium.utils.GetObjectRepository;
+import actions.utils.GetObjectRepository;
 import io.appium.java_client.MobileElement;
-import utils.Elements;
+import actions.utils.Elements;
 
 class SetText {
 
@@ -19,6 +19,7 @@ class SetText {
 		try {
 			Driver.driver.hideKeyboard();
 			element.click();
+            element.clear();
 		} catch (Exception e) {
 			element.click();
 		}

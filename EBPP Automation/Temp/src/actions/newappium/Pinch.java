@@ -4,7 +4,7 @@ import java.util.HashMap;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.MultiTouchAction;
 import io.appium.java_client.TouchAction;
-import actions.selenium.utils.GetObjectRepository;
+import actions.utils.GetObjectRepository;
 import actions.utils.Elements;
 
 class Pinch {

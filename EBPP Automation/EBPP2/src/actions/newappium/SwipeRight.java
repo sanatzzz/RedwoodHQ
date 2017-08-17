@@ -4,11 +4,11 @@ package actions.newappium;
  * Created by dinkark on 13-Oct-2016
  */
 import java.util.HashMap;
-import utils.Constants;
+import actions.utils.Constants;
 import io.appium.java_client.MobileElement;
-import utils.Elements;
-import utils.SwipeElement;
-import actions.selenium.utils.GetObjectRepository;
+import actions.utils.Elements;
+import actions.utils.SwipeElement;
+import actions.utils.GetObjectRepository;
 
 class SwipeRight {
 	public void run(HashMap<String, String> params) throws Exception{

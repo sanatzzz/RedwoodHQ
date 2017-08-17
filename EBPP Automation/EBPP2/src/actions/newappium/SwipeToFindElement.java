@@ -5,7 +5,7 @@ import java.util.HashMap;
 import org.junit.Assert;
 
 import io.appium.java_client.MobileElement;
-import utils.SwipeAndFindElement;
+import actions.utils.SwipeAndFindElement;
 
 /**
  * Created by dinkark on 13-Oct-2016

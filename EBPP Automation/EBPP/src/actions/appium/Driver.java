@@ -15,9 +15,9 @@ import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.ios.IOSDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
-import utils.Constants;
+import actions.utils.Constants;
 import io.appium.java_client.MobileBy.ByAndroidUIAutomator;
-import utils.Elements;
+import actions.utils.Elements;
 import org.openqa.selenium.Alert;
 //import actions.selenium.utils.Elements;
 

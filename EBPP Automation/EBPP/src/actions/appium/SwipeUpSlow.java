@@ -2,9 +2,9 @@ package actions.appium;
 import java.util.HashMap;
 import actions.selenium.utils.GetObjectRepository;
 import io.appium.java_client.MobileElement;
-import utils.Elements;
-import utils.Constants;
-import utils.SwipeElement;
+import actions.utils.Elements;
+import actions.utils.Constants;
+import actions.utils.SwipeElement;
 
 /**
  * Created by dinkark on 13-Oct-2016

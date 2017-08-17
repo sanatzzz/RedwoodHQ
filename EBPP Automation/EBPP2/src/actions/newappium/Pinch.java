@@ -1,14 +1,11 @@
 package actions.newappium;
-/**
- * Created by dinkark on 13-Oct-2016
- */
 import java.util.HashMap;
 
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.MultiTouchAction;
 import io.appium.java_client.TouchAction;
-import actions.selenium.utils.GetObjectRepository;
-import utils.Elements;
+import actions.utils.GetObjectRepository;
+import actions.utils.Elements;
 
 class Pinch {
 	public void run(HashMap<String, String> params) throws Exception {

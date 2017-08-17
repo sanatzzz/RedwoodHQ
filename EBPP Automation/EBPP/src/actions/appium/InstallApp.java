@@ -5,7 +5,7 @@ package actions.appium;
  */
 import java.util.HashMap;
 
-import utils.Constants;
+import actions.utils.Constants;
 
 class InstallApp {
 	public void run(HashMap<String, String> params) {

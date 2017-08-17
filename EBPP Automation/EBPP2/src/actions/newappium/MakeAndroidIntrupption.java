@@ -2,8 +2,7 @@ package actions.newappium;
 
 import java.io.IOException;
 import java.util.HashMap;
-
-import utils.Constants;
+import actions.utils.Constants;
 
 /**
  * Created by dinkark on 26-Oct-2016

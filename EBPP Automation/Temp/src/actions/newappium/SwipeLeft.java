@@ -8,7 +8,7 @@ import actions.utils.Constants;
 import io.appium.java_client.MobileElement;
 import actions.utils.Elements;
 import actions.utils.SwipeElement;
-import actions.selenium.utils.GetObjectRepository;
+import actions.utils.GetObjectRepository;
 
 class SwipeLeft {
 	public void run(HashMap<String, String> params) throws Exception{

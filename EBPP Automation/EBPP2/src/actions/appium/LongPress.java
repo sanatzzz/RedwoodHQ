@@ -7,7 +7,7 @@ import java.util.HashMap;
 import actions.selenium.utils.GetObjectRepository;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.TouchAction;
-import utils.Elements;
+import actions.utils.Elements;
 
 class LongPress {
 	public void run(HashMap<String, String> params) throws Exception {

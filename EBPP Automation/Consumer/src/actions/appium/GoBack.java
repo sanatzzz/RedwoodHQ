@@ -1,8 +1,8 @@
-package actions;
+package actions.appium;
 import java.util.*;
 import java.util.HashMap;
 import io.appium.java_client.MobileElement;
-import utils.Elements;
+import actions.utils.Elements;
 
 
 class GoBack{

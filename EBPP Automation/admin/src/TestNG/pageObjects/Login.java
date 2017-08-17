@@ -1,9 +1,11 @@
-package pageObjects;
-
+package TestNG.pageObjects;
+import io.appium.java_client.AppiumDriver;
+import io.appium.java_client.MobileElement;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import TestNG.test.Capabilities;
 
 public class Login {
 
@@ -13,27 +15,27 @@ public class Login {
 
      */
 
-    WebDriver driver;
+    AppiumDriver<MobileElement> driver;
 
-    @FindBy(xpath="//*[@id=\"j_id__ctru12:r1:0:s1:ot189::content\"]")
+    @FindBy(id="etMobileNumber")
 
-    WebElement username;
-
-    
-
-    @FindBy(xpath="//*[@id=\"j_id__ctru12:r1:0:s1:it587::content\"]")
-
-    WebElement password;
+    MobileElement username;
 
     
 
-    @FindBy(xpath="//*[@id=\"j_id__ctru12:r1:0:s1:cb1\"]")
+    @FindBy(id="etPassword")
 
-    WebElement login;
+    MobileElement password;
 
     
 
-    public Login(WebDriver driver){
+    @FindBy(name="Login/Signup")
+
+    MobileElement login;
+
+    
+
+    public Login(AppiumDriver driver){
 
         this.driver = driver;
 
@@ -91,14 +93,16 @@ public class Login {
         //Fill user name
 
         this.setUserName(strUserName);
+        
+        
+        //Click Login button
+
+        this.clickLogin();
 
         //Fill password
 
         this.setPassword(strPasword);
 
-        //Click Login button
-
-        this.clickLogin();
 
                 
 

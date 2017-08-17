@@ -4,9 +4,9 @@ package actions.newappium;
  * Created by dinkark on 03-Oct-2016
  */
 import java.util.HashMap;
-import actions.selenium.utils.GetObjectRepository;
+import actions.utils.GetObjectRepository;
 import io.appium.java_client.MobileElement;
-import utils.Elements;
+import actions.utils.Elements;
 
 class GetText {
 	public String run(HashMap<String, String> params) throws Exception {

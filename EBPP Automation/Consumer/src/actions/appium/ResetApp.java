@@ -1,4 +1,4 @@
-package actions;
+package actions.appium;
 
 /**
  * Created by dinkark on 03-Oct-2016

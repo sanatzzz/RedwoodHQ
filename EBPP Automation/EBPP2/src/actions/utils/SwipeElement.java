@@ -1,4 +1,4 @@
-package utils;
+package actions.utils;
 
 /**
  * Created by dinkark on 12-Oct-2016

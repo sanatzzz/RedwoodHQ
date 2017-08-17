@@ -1,4 +1,4 @@
-package actions;
+package actions.appium;
 
 /**
  * Created by dinkark on 05-Oct-2016
@@ -7,7 +7,7 @@ import java.util.HashMap;
 
 import org.openqa.selenium.ScreenOrientation;
 
-import utils.Constants;
+import actions.utils.Constants;
 
 class RotateScreen {
 	public void run(HashMap<String, String> params) {

@@ -85,7 +85,7 @@ public class GetObjectRepository{
         System.out.println("Looking for Objects properties of : ->" +  sElement  + ":" + sPage_name );
         
      for (int i = 0; i < sElementName.size(); i++) {
-         System.out.println("Inside For");
+         //System.out.println("Inside For");
             if(sPageName.get(i).contains(sPage_name))
             {
                 System.out.println("Page Found"+sPageName.get(i));

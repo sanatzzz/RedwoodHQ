@@ -6,7 +6,7 @@ package actions.newappium;
 import java.util.HashMap;
 import actions.utils.Constants;
 import io.appium.java_client.MobileElement;
-import actions.selenium.utils.GetObjectRepository;
+import actions.utils.GetObjectRepository;
 import actions.utils.Elements;
 import actions.utils.SwipeElement;
 
