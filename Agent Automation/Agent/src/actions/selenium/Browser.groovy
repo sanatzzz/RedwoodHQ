@@ -43,10 +43,12 @@ class Browser{
         service = new ChromeDriverService.Builder().usingPort(9518).usingDriverExecutable(new File("chromedriver.exe")).build()
       }
       service.start()
-     // Driver = new RemoteWebDriver(service.getUrl(),DesiredCapabilities.chrome())
+      Driver = new RemoteWebDriver(service.getUrl(),DesiredCapabilities.chrome())
         
         
-         ChromeOptions options=new ChromeOptions();
+     //handles password saving alert asked by chrome  
+        ChromeOptions options=new ChromeOptions();
+         
         options.addArguments("--start-maximized");
         
         Map<String,Object> prefs=new HashMap<String,Object>();
@@ -58,6 +60,9 @@ class Browser{
         capabilities.setCapability(ChromeOptions.CAPABILITY,options);
         
         Driver = new RemoteWebDriver(service.getUrl(),capabilities);
+        
+        
+        
     }
       
       else if(params."Browser Type" == "Android")
