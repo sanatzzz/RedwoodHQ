@@ -79,6 +79,6 @@ import org.openqa.selenium.Alert;
                 //alert.accept();
 			break;
 		}
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(7, TimeUnit.SECONDS);
 	}
 }

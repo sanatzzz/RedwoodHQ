@@ -1,6 +1,6 @@
 package actions.utils;
 import actions.selenium.Browser;
-import actions.appium.Driver;
+import actions.newappium.Driver;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.Statement;
@@ -85,10 +85,14 @@ public class GetObjectRepository{
         System.out.println("Looking for Objects properties of : ->" +  sElement  + ":" + sPage_name );
         
      for (int i = 0; i < sElementName.size(); i++) {
+          System.out.println("Hi");
             if(sPageName.get(i).contains(sPage_name))
             {
+                
+                System.out.println("Page found"+sPageName.get(i));
                 if(sElementName.get(i).contains(sElement))
                 {
+                    System.out.println("Element found"+sElementName.get(i));
                     sLocatorType = sElementType.get(i);
                     sLocatorValue = sElementValue.get(i);
                     break;

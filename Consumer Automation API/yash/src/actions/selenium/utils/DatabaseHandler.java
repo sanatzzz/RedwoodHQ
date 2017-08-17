@@ -237,8 +237,8 @@ public class DatabaseHandler{
                 preparedStmt.setString (3,request);
                 preparedStmt.setString (4, response);
     	      	        
-    	      	preparedStmt.execute();
-                System.out.println("Data inserted to Sample Table");
+    	      	//preparedStmt.execute();
+                //System.out.println("Data inserted to Sample Table");
                 con.close();
 		    	preparedStmt.close();
             }

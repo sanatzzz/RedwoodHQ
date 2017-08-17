@@ -40,13 +40,18 @@ class GetOtpIDAM{
                      ResultSet rs = stmt.executeQuery(SQL);
 
                      System.out.println("Executed"+rs);
- while (rs.next()) {
+                  
+                  
+             while (rs.next()) {
+                 
+                 System.out.println("entered while loop");
                             Clob clob = rs.getClob(1);
                            if (clob != null) {
+                               System.out.println("entered if loop");
+                               
                                   String clobStr = clob.getSubString(1, (int) clob.length());
                                   System.out.println(clobStr);
-                                  System.out
-                                                .println("OTP is "
+                                  System.out.println("OTP is "
                                                               + clobStr.indexOf("OTP</Name><Value>")
                                                               + clobStr.substring(
                                                                             clobStr.indexOf("OTP</Name><Value>") + 17,
