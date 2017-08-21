@@ -47,19 +47,19 @@ class Browser{
         
         
      //handles password saving alert asked by chrome  
-        ChromeOptions options=new ChromeOptions();
+      //  ChromeOptions options=new ChromeOptions();
          
-        options.addArguments("--start-maximized");
+      //  options.addArguments("--start-maximized");
         
-        Map<String,Object> prefs=new HashMap<String,Object>();
-        prefs.put("credentials_enable_service", false);
-		prefs.put("profile.password_manager_enabled", false);
-		options.setExperimentalOption("prefs", prefs);
+     //   Map<String,Object> prefs=new HashMap<String,Object>();
+     //   prefs.put("credentials_enable_service", false);
+	//	prefs.put("profile.password_manager_enabled", false);
+	//	options.setExperimentalOption("prefs", prefs);
 
-        DesiredCapabilities capabilities=DesiredCapabilities.chrome();
-        capabilities.setCapability(ChromeOptions.CAPABILITY,options);
-        
-        Driver = new RemoteWebDriver(service.getUrl(),capabilities);
+      //  DesiredCapabilities capabilities=DesiredCapabilities.chrome();
+      //  capabilities.setCapability(ChromeOptions.CAPABILITY,options);
+       
+     //   Driver = new RemoteWebDriver(service.getUrl(),capabilities);
         
         
         

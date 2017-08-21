@@ -1,4 +1,4 @@
-<project name="Consumer_Automation" basedir="." default="main" xmlns:ivy="antlib:org.apache.ivy.ant">
+<project name="Consumer Automation" basedir="." default="main" xmlns:ivy="antlib:org.apache.ivy.ant">
 
     <property name="src.dir"     value="src"/>
     <property name="build.dir"   value="build"/>

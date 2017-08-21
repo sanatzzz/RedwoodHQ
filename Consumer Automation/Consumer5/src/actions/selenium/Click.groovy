@@ -1,20 +1,27 @@
 package actions.selenium
-
 import actions.selenium.utils.Elements
+import actions.selenium.utils.GetObjectRepository
 import actions.selenium.Browser
 import org.openqa.selenium.WebElement
+import org.openqa.selenium.By
+import org.openqa.selenium.WebDriver
 
 class Click{
   
   public void run(def params){
-
-    WebElement element = Elements.find(params,Browser.Driver)
-    //try catch is a workaround for a webdriver bug where element exists and visible but
-    //webdriver is unable to click it
+      String ElementName = (String) params.get("Element Name");
+      String PageName = (String) params.get("Page Name"); 
+      
+      WebElement element = GetObjectRepository.find_Element(ElementName,PageName)
+      //System.out.println("sLocator clickTest : "+sLocator);
+      // WebElement element = Elements.find(params,Browser.Driver)
+      //try catch is a workaround for a webdriver bug where element exists and visible but
+      //webdriver is unable to click it
     int iTimeout = 20
     while(iTimeout > 0)
     try{
-      element.click()
+   element.click();
+
       return
     }
     catch(org.openqa.selenium.WebDriverException err){

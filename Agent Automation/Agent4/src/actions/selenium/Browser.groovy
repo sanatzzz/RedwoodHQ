@@ -1,5 +1,6 @@
 package actions.selenium;
-
+//import java.net.Proxy
+import org.openqa.selenium.Proxy
 import org.openqa.selenium.WebDriver
 import org.openqa.selenium.ie.InternetExplorerDriver
 import org.openqa.selenium.firefox.FirefoxDriver
@@ -43,9 +44,27 @@ class Browser{
         service = new ChromeDriverService.Builder().usingPort(9518).usingDriverExecutable(new File("chromedriver.exe")).build()
       }
       service.start()
-     // Driver = new RemoteWebDriver(service.getUrl(),DesiredCapabilities.chrome())
+             
+    
         
-     //handles password saving alert asked by chrome  
+
+       DesiredCapabilities capabilities=DesiredCapabilities.chrome();
+        
+        
+        //proxy settings
+        
+        Proxy p=new Proxy();
+        p.setHttpProxy("10.140.218.59:3128");
+        p.setSslProxy("10.140.218.59:3128");
+        
+        //capabilities.setCapability(CapabilityType.PROXY, p);
+        
+        
+        capabilities.setCapability("proxy",p);
+        
+        
+         //handles password saving alert asked by chrome  
+        
         ChromeOptions options=new ChromeOptions();
         options.addArguments("--start-maximized");
         
@@ -53,9 +72,9 @@ class Browser{
         prefs.put("credentials_enable_service", false);
 		prefs.put("profile.password_manager_enabled", false);
 		options.setExperimentalOption("prefs", prefs);
-
-        DesiredCapabilities capabilities=DesiredCapabilities.chrome();
+        
         capabilities.setCapability(ChromeOptions.CAPABILITY,options);
+        
         
         Driver = new RemoteWebDriver(service.getUrl(),capabilities);
         

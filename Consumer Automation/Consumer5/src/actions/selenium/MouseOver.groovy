@@ -8,8 +8,12 @@ import org.openqa.selenium.WebElement
 class MouseOver{
 
   public void run(def params){
-    WebElement element = Elements.find(params,Browser.Driver)
-
+  //  WebElement element = Elements.find(params,Browser.Driver)
+//New Code
+      String ElementName = (String) params.get("Element Name");
+      String PageName = (String) params.get("Page Name"); 
+      WebElement element = GetObjectRepository.find_Element(ElementName,PageName);
+//New Code      
     JavascriptExecutor jsExec = (JavascriptExecutor) Browser.Driver
     String javaScript = "var evObj = document.createEvent('MouseEvents');evObj.initEvent(\"mouseover\",true, false, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null);arguments[0].dispatchEvent(evObj);"
     jsExec.executeScript(javaScript, element)

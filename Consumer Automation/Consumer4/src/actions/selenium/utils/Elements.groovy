@@ -1,15 +1,14 @@
 package actions.selenium.utils
-
 import org.openqa.selenium.By
 import org.openqa.selenium.WebElement
 import org.openqa.selenium.WebDriver
 
 
 class Elements{
-  
+ 
   public static WebElement find(def params,WebDriver Driver){
     assert Driver != null, "Error browser is not opened.  Use Open Browser action."
-
+   	println "Inside groovy code"
     WebElement foundElement = null
     switch (params."ID Type"){
       case "Class Name":
@@ -18,7 +17,7 @@ class Elements{
       case "Css Selector":
       	foundElement = Driver.findElement(By.cssSelector(params.ID))
       	break
-      case "ID":
+      case "ID":  
       	foundElement = Driver.findElement(By.id(params.ID))
       	break      
       case "Link Text":
@@ -47,6 +46,7 @@ class Elements{
     assert Driver != null, "Error browser is not opened.  Use Open Browser action."
     
     def foundElements = []
+      
     
     switch (params."ID Type"){
       case "Class Name":
